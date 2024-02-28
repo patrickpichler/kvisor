@@ -22,7 +22,7 @@ require (
 	github.com/google/go-containerregistry v0.12.0
 	github.com/google/uuid v1.3.1
 	github.com/googleapis/gax-go/v2 v2.11.0
-	github.com/gorilla/mux v1.8.0
+	github.com/gorilla/mux v1.8.1
 	github.com/hashicorp/golang-lru v0.5.4
 	github.com/json-iterator/go v1.1.12
 	github.com/kelseyhightower/envconfig v1.4.0
