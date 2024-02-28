@@ -23,11 +23,11 @@ require (
 	github.com/google/uuid v1.3.1
 	github.com/googleapis/gax-go/v2 v2.11.0
 	github.com/gorilla/mux v1.8.0
-	github.com/hashicorp/golang-lru v0.5.4
+	github.com/hashicorp/golang-lru/v2 v2.0.7
 	github.com/json-iterator/go v1.1.12
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/magiconair/properties v1.8.6
-	github.com/onsi/ginkgo v1.16.5
+	github.com/onsi/ginkgo/v2 v2.15.0
 	github.com/open-policy-agent/cert-controller v0.7.0
 	github.com/prometheus/client_golang v1.14.0
 	github.com/samber/lo v1.33.0
@@ -40,7 +40,7 @@ require (
 	golang.stackrox.io/kube-linter v0.4.1-0.20221021125313-bd11843210d1
 	google.golang.org/api v0.126.0
 	gopkg.in/inf.v0 v0.9.1
-	gopkg.in/yaml.v2 v2.4.0
+	gopkg.in/yaml.v3 v3.0.1
 	gopkg.in/yaml.v3 v3.0.1
 	k8s.io/api v0.26.11
 	k8s.io/apimachinery v0.27.1
@@ -272,10 +272,10 @@ replace github.com/docker/docker => github.com/docker/docker v20.10.3-0.20220224
 
 // v1.2.0 is taken from github.com/open-policy-agent/opa v0.42.0
 // v1.2.0 incompatible with github.com/docker/docker v20.10.3-0.20220224222438-c78f6963a1c0+incompatible
-replace oras.land/oras-go => oras.land/oras-go v1.1.1
+replace oras.land/oras-go/v2 => oras.land/oras-go v2.4.0
 
 replace github.com/chzyer/logex v1.1.10 => github.com/chzyer/logex v1.2.0
 
-replace github.com/containerd/containerd => github.com/containerd/containerd v1.6.1-0.20220706215228-681aaf68b7dc
+replace github.com/containerd/containerd/v2 => github.com/containerd/containerd v2.0.0-beta.2
 
 replace github.com/go-enry/go-license-detector/v4 v4.3.0 => ./cmd/kvisor/imgcollector/stub/licensing
