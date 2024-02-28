@@ -1,4 +1,4 @@
-FROM alpine:3.18.5
+FROM alpine:3.19.1
 
 # Needed for kube-bench.
 RUN apk --no-cache add procps

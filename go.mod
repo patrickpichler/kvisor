@@ -3,50 +3,50 @@ module github.com/castai/kvisor
 go 1.21.5
 
 require (
-	cloud.google.com/go/binaryauthorization v1.6.1
-	cloud.google.com/go/container v1.24.0
-	cloud.google.com/go/serviceusage v1.5.0
-	github.com/aquasecurity/trivy v0.35.0
-	github.com/aws/aws-sdk-go-v2/config v1.18.3
-	github.com/aws/aws-sdk-go-v2/service/eks v1.22.1
-	github.com/aws/smithy-go v1.18.1
-	github.com/bombsimon/logrusr/v4 v4.0.0
-	github.com/castai/image-analyzer v0.2.0
-	github.com/cenkalti/backoff/v4 v4.1.3
-	github.com/containerd/containerd v1.7.8
+	cloud.google.com/go/binaryauthorization v1.8.1
+	cloud.google.com/go/container v1.32.0
+	cloud.google.com/go/serviceusage v1.8.4
+	github.com/aquasecurity/trivy v0.49.1
+	github.com/aws/aws-sdk-go-v2/config v1.27.4
+	github.com/aws/aws-sdk-go-v2/service/eks v1.40.1
+	github.com/aws/smithy-go v1.20.1
+	github.com/bombsimon/logrusr/v4 v4.1.0
+	github.com/castai/image-analyzer v0.3.0
+	github.com/cenkalti/backoff/v4 v4.2.1
+	github.com/containerd/containerd v1.7.13
 	github.com/davecgh/go-spew v1.1.1
-	github.com/fatih/color v1.13.0
-	github.com/go-resty/resty/v2 v2.7.0
-	github.com/golang/glog v1.1.2
+	github.com/fatih/color v1.16.0
+	github.com/go-resty/resty/v2 v2.11.0
+	github.com/golang/glog v1.2.0
 	github.com/golang/mock v1.6.0
-	github.com/google/go-containerregistry v0.12.0
-	github.com/google/uuid v1.3.1
-	github.com/googleapis/gax-go/v2 v2.11.0
-	github.com/gorilla/mux v1.8.0
-	github.com/hashicorp/golang-lru v0.5.4
+	github.com/google/go-containerregistry v0.19.0
+	github.com/google/uuid v1.6.0
+	github.com/googleapis/gax-go/v2 v2.12.2
+	github.com/gorilla/mux v1.8.1
+	github.com/hashicorp/golang-lru v0.6.0
 	github.com/json-iterator/go v1.1.12
 	github.com/kelseyhightower/envconfig v1.4.0
-	github.com/magiconair/properties v1.8.6
+	github.com/magiconair/properties v1.8.7
 	github.com/onsi/ginkgo v1.16.5
-	github.com/open-policy-agent/cert-controller v0.7.0
-	github.com/prometheus/client_golang v1.14.0
-	github.com/samber/lo v1.33.0
+	github.com/open-policy-agent/cert-controller v0.10.1
+	github.com/prometheus/client_golang v1.19.0
+	github.com/samber/lo v1.39.0
 	github.com/sirupsen/logrus v1.9.3
-	github.com/spf13/cobra v1.6.1
-	github.com/spf13/viper v1.13.0
+	github.com/spf13/cobra v1.8.0
+	github.com/spf13/viper v1.18.2
 	github.com/stretchr/testify v1.8.4
-	golang.org/x/oauth2 v0.11.0
+	golang.org/x/oauth2 v0.17.0
 	golang.org/x/sync v0.6.0
-	golang.stackrox.io/kube-linter v0.4.1-0.20221021125313-bd11843210d1
-	google.golang.org/api v0.126.0
+	golang.stackrox.io/kube-linter v0.6.8
+	google.golang.org/api v0.167.0
 	gopkg.in/inf.v0 v0.9.1
 	gopkg.in/yaml.v2 v2.4.0
 	gopkg.in/yaml.v3 v3.0.1
-	k8s.io/api v0.26.11
-	k8s.io/apimachinery v0.27.1
-	k8s.io/client-go v0.26.11
-	k8s.io/klog/v2 v2.90.1
-	sigs.k8s.io/controller-runtime v0.14.2
+	k8s.io/api v0.29.2
+	k8s.io/apimachinery v0.29.2
+	k8s.io/client-go v0.29.2
+	k8s.io/klog/v2 v2.120.1
+	sigs.k8s.io/controller-runtime v0.17.2
 )
 
 require (
@@ -272,10 +272,10 @@ replace github.com/docker/docker => github.com/docker/docker v20.10.3-0.20220224
 
 // v1.2.0 is taken from github.com/open-policy-agent/opa v0.42.0
 // v1.2.0 incompatible with github.com/docker/docker v20.10.3-0.20220224222438-c78f6963a1c0+incompatible
-replace oras.land/oras-go => oras.land/oras-go v1.1.1
+replace oras.land/oras-go => oras.land/oras-go v1.2.5
 
 replace github.com/chzyer/logex v1.1.10 => github.com/chzyer/logex v1.2.0
 
-replace github.com/containerd/containerd => github.com/containerd/containerd v1.6.1-0.20220706215228-681aaf68b7dc
+replace github.com/containerd/containerd => github.com/containerd/containerd v1.7.13
 
 replace github.com/go-enry/go-license-detector/v4 v4.3.0 => ./cmd/kvisor/imgcollector/stub/licensing

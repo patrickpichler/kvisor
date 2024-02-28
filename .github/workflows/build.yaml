@@ -59,7 +59,7 @@ jobs:
         # You may pin to the exact commit or the version.
         # uses: golangci/golangci-lint-action@537aa1903e5d359d0b27dbc19ddd22c5087f3fbc
         if: ${{ github.event_name == 'pull_request' && !contains(env.head_commit_message, '#skip-lint') }}
-        uses: golangci/golangci-lint-action@v3.7.0
+        uses: golangci/golangci-lint-action@v3.7.1
         with:
           args: -v --timeout=5m
           skip-pkg-cache: true
@@ -134,7 +134,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create kind cluster
-        uses: helm/kind-action@v1.4.0
+        uses: helm/kind-action@v1.9.0
         with:
           config: ./e2e/kind-config.yaml
           cluster_name: kvisor-e2e
