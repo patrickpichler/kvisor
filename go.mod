@@ -276,6 +276,6 @@ replace oras.land/oras-go => oras.land/oras-go v1.1.1
 
 replace github.com/chzyer/logex v1.1.10 => github.com/chzyer/logex v1.2.0
 
-replace github.com/containerd/containerd => github.com/containerd/containerd v1.6.1-0.20220706215228-681aaf68b7dc
+replace github.com/containerd/containerd/v2 => github.com/containerd/containerd v2.0.0-beta.2
 
 replace github.com/go-enry/go-license-detector/v4 v4.3.0 => ./cmd/kvisor/imgcollector/stub/licensing
